@@ -14,5 +14,13 @@ install_vim_git_gutter() {
 	echo "GitGutter plugin installed successfully"
 }
 
+install_vim_nerdtree() {
+	echo "Installing NerdTree plugin for Vim"
+	mkdir -p ~/.vim/pack/preservim/start
+	git clone https://github.com/preservim/nerdtree.git ~/.vim/pack/vendor/start/nerdtree
+	vim -u NONE -c "helptags ~/.vim/pack/vendor/start/nerdtree/doc" -c q
+}
+
 install_vim_config
 install_vim_git_gutter
+install_vim_nerdtree
