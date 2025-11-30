@@ -1,0 +1,5 @@
+gcc
+git
+make
+tmux
+vim
